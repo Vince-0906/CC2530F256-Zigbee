@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(ewp|eww|ewj|bat|sh|cmake|makefile|mk\\)$\")"
+    ]
+  }
+}

@@ -31,8 +31,8 @@ static void LED_WriteRaw(unsigned char led_id, unsigned char level)
 
 void LED_Init(void)
 {
-    P1SEL &= ~0x13;
-    P1DIR |= 0x13;
+    P1SEL &= ~0x03;       /* P1.0 (LED3), P1.1 (LED4) as GPIO; P1.4 reserved for PWM */
+    P1DIR |= 0x03;
 
     P0SEL &= ~0x02;
     P0DIR |= 0x02;

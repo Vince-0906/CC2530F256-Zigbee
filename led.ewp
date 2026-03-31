@@ -2076,6 +2076,12 @@
   <file>
     <name>$PROJ_DIR$\buzzer.c</name>
   </file>
+  <file>
+    <name>$PROJ_DIR$\adc.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\pwm.c</name>
+  </file>
 </project>
 
 
