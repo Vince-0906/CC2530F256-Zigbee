@@ -6,63 +6,63 @@
   <configuration>
     <name>Debug</name>
     <outputs>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\uart.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\oled_ssd1306.pbi</file>
+      <file>$PROJ_DIR$\dht11.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\dht11.pbi</file>
+      <file>$PROJ_DIR$\uart.c</file>
+      <file>$PROJ_DIR$\pwm.c</file>
       <file>$PROJ_DIR$\buzzer.c</file>
       <file>$PROJ_DIR$\key.c</file>
       <file>$PROJ_DIR$\led.c</file>
-      <file>$PROJ_DIR$\main.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\led.r51</file>
-      <file>$PROJ_DIR$\buzzer.h</file>
-      <file>$PROJ_DIR$\dht11.c</file>
-      <file>$PROJ_DIR$\pwm.c</file>
-      <file>$PROJ_DIR$\uart.c</file>
       <file>$PROJ_DIR$\adc.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\oled_ssd1306.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\dht11.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
-      <file>$PROJ_DIR$\dht11.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\uart.r51</file>
-      <file>$PROJ_DIR$\uart.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\dht11.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\soft_i2c.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\pwm.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\buzzer.pbi</file>
-      <file>$PROJ_DIR$\oled_ssd1306.h</file>
-      <file>$PROJ_DIR$\soft_i2c.c</file>
-      <file>$PROJ_DIR$\adc.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\led.pbi</file>
-      <file>$PROJ_DIR$\oled_ssd1306.c</file>
-      <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug\Exe\led.d51</file>
-      <file>$PROJ_DIR$\Debug\Obj\key.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\soft_i2c.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\oled_ssd1306.r51</file>
       <file>$PROJ_DIR$\soft_i2c.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\led.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\soft_i2c.r51</file>
+      <file>$PROJ_DIR$\soft_i2c.c</file>
       <file>$PROJ_DIR$\Debug\Obj\adc.r51</file>
       <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_cc2530F256_banked.xcl</file>
-      <file>$PROJ_DIR$\Debug\Obj\buzzer.r51</file>
-      <file>$PROJ_DIR$\pwm.h</file>
-      <file>$PROJ_DIR$\key.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\soft_i2c.pbi</file>
-      <file>$PROJ_DIR$\led.h</file>
-      <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\key.r51</file>
       <file>$PROJ_DIR$\Debug\Exe\led.hex</file>
-      <file>$PROJ_DIR$\Debug\Obj\led.pbd</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\buzzer.r51</file>
+      <file>$PROJ_DIR$\key.h</file>
       <file>$PROJ_DIR$\Debug\Obj\pwm.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\oled_ssd1306.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\buzzer.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\led.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\clib\cl-pli-blxd-1e16x01.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\led.pbd</file>
+      <file>$PROJ_DIR$\oled_ssd1306.h</file>
+      <file>$PROJ_DIR$\pwm.h</file>
+      <file>$PROJ_DIR$\buzzer.h</file>
+      <file>$PROJ_DIR$\adc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\pwm.r51</file>
+      <file>$PROJ_DIR$\Debug\Obj\uart.r51</file>
+      <file>$PROJ_DIR$\oled_ssd1306.c</file>
+      <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\adc.pbi</file>
+      <file>$PROJ_DIR$\dht11.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\key.pbi</file>
+      <file>$PROJ_DIR$\led.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\dht11.r51</file>
+      <file>$PROJ_DIR$\Debug\Exe\led.d51</file>
+      <file>$PROJ_DIR$\Debug\Obj\key.r51</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 28 40</file>
+          <file> 43 21</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\buzzer.c</name>
+      <name>$PROJ_DIR$\main.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
@@ -70,86 +70,17 @@
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 19</file>
+          <file> 15</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 38 5</file>
+          <file> 37 41 31 23 32 30 39 1</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 38 5</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\key.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 39</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 29</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 38 35</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 38 35</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\led.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 4</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 24</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 38 37</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 38 37</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\main.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 42</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 27</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 38 37 5 35 22 34 13 15</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 38 37 5 35 22 34 13 15</file>
+          <file> 37 41 31 23 32 30 39 1</file>
         </tool>
       </inputs>
     </file>
@@ -158,7 +89,30 @@
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 11</file>
+          <file> 42</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 37 39</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37 39</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\uart.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 35</file>
         </tool>
         <tool>
           <name>BICOMP</name>
@@ -168,11 +122,11 @@
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 38 13</file>
+          <file> 37 1</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 38 13</file>
+          <file> 37 1</file>
         </tool>
       </inputs>
     </file>
@@ -181,26 +135,72 @@
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 18</file>
+          <file> 34</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 43</file>
+          <file> 24</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 38 34</file>
+          <file> 37 30</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 38 34</file>
+          <file> 37 30</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\uart.c</name>
+      <name>$PROJ_DIR$\buzzer.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 37 31</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37 31</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\key.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 44</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 37 23</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37 23</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\led.c</name>
       <outputs>
         <tool>
           <name>ICC8051</name>
@@ -208,17 +208,17 @@
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 12</file>
+          <file> 26</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 38 15</file>
+          <file> 37 41</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 38 15</file>
+          <file> 37 41</file>
         </tool>
       </inputs>
     </file>
@@ -227,21 +227,21 @@
       <outputs>
         <tool>
           <name>ICC8051</name>
-          <file> 31</file>
+          <file> 19</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 23</file>
+          <file> 38</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 38 22</file>
+          <file> 37 32</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 38 22</file>
+          <file> 37 32</file>
         </tool>
       </inputs>
     </file>
@@ -254,55 +254,17 @@
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 36</file>
+          <file> 11</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
           <name>ICC8051</name>
-          <file> 38 30</file>
+          <file> 37 13</file>
         </tool>
         <tool>
           <name>BICOMP</name>
-          <file> 38 30</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\oled_ssd1306.c</name>
-      <outputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 44</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 10</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ICC8051</name>
-          <file> 20 30</file>
-        </tool>
-        <tool>
-          <name>BICOMP</name>
-          <file> 20 30</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\led.d51</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 40</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 32 31 33 11 39 4 42 18 14 26</file>
+          <file> 37 13</file>
         </tool>
       </inputs>
     </file>
@@ -311,7 +273,45 @@
       <inputs>
         <tool>
           <name>BILINK</name>
-          <file> 23 19 16 29 24 27 43 12</file>
+          <file> 38 25 4 40 26 15 24 16</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\oled_ssd1306.c</name>
+      <outputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC8051</name>
+          <file> 29 13</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\led.d51</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 21</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 20 19 22 42 44 14 33 34 35 27</file>
         </tool>
       </inputs>
     </file>
