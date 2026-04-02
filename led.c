@@ -31,11 +31,11 @@ static void LED_WriteRaw(unsigned char led_id, unsigned char level)
 
 void LED_Init(void)
 {
-    P1SEL &= ~0x03;       /* P1.0 (LED3), P1.1 (LED4) as GPIO; P1.4 reserved for PWM */
-    P1DIR |= 0x03;
+    P1SEL &= ~0x13;       /* P1.0 (LED3), P1.1 (LED4), P1.4 (LED1) as GPIO */
+    P1DIR |= 0x13;        /* P1.0, P1.1, P1.4 output */
 
-    P0SEL &= ~0x02;
-    P0DIR |= 0x02;
+    P0SEL &= ~0x02;       /* P0.1 (LED2) as GPIO */
+    P0DIR |= 0x02;        /* P0.1 output */
 
     LED_AllOff();
 }
@@ -62,4 +62,25 @@ void LED_ShowSingle(unsigned char led_id)
 {
     LED_AllOff();
     LED_On(led_id);
+}
+
+void LED_Toggle(unsigned char led_id)
+{
+    switch (led_id)
+    {
+    case LED_ID_1:
+        LED1 ^= 1;
+        break;
+    case LED_ID_2:
+        LED2 ^= 1;
+        break;
+    case LED_ID_3:
+        LED3 ^= 1;
+        break;
+    case LED_ID_4:
+        LED4 ^= 1;
+        break;
+    default:
+        break;
+    }
 }

@@ -1,0 +1,9 @@
+Debug/
+settings/
+*.dep
+*.dni
+*.wsdt
+*.dbgdt
+*.hex
+*.pbd
+*.r51

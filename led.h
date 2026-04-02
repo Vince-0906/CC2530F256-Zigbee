@@ -11,5 +11,6 @@ void LED_On(unsigned char led_id);
 void LED_Off(unsigned char led_id);
 void LED_AllOff(void);
 void LED_ShowSingle(unsigned char led_id);
+void LED_Toggle(unsigned char led_id);
 
 #endif

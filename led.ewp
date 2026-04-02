@@ -2065,22 +2065,28 @@
     </settings>
   </configuration>
   <file>
+    <name>$PROJ_DIR$\adc.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\buzzer.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\dht11.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\key.c</name>
+  </file>
+  <file>
     <name>$PROJ_DIR$\led.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\main.c</name>
   </file>
   <file>
-    <name>$PROJ_DIR$\key.c</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\buzzer.c</name>
-  </file>
-  <file>
-    <name>$PROJ_DIR$\adc.c</name>
-  </file>
-  <file>
     <name>$PROJ_DIR$\pwm.c</name>
+  </file>
+  <file>
+    <name>$PROJ_DIR$\uart.c</name>
   </file>
 </project>
 
