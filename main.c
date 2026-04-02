@@ -31,7 +31,7 @@
 /* ====================================================================== */
 
 /* Alarm thresholds (settable from PC) */
-static unsigned char alarm_temp_th = 28;   /* default 28 C */
+static unsigned char alarm_temp_th = 40;   /* default 28 C */
 static unsigned char alarm_humi_th = 60;   /* default 60 % */
 
 /* Alarm state */
