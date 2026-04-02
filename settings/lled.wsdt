@@ -12,7 +12,7 @@
           
           
           
-        <Column0>124</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+        <Column0>107</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Debug-Log>
         <PreferedWindows>
@@ -42,7 +42,7 @@
             <Factory>Workspace</Factory>
             <Session>
               
-            <NodeDict><ExpandedNode>led</ExpandedNode></NodeDict></Session>
+            <NodeDict><ExpandedNode>led</ExpandedNode><ExpandedNode>led/dht11.c</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
         
@@ -62,14 +62,14 @@
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\IAR\8051\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\led.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>252</SelStart><SelEnd>252</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\buzzer.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>20</YPos><SelStart>733</SelStart><SelEnd>774</SelEnd></Tab><ActiveTab>3</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\IAR\8051\doc\infocenter\index.ENU.html</Filename></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\main.c</Filename><XPos>0</XPos><YPos>253</YPos><SelStart>7746</SelStart><SelEnd>7746</SelEnd></Tab><ActiveTab>1</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\pwm.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\adc.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\buzzer.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\led.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\IAR\8051\inc\ioCC2530.h</Filename><XPos>0</XPos><YPos>99</YPos><SelStart>0</SelStart><SelEnd>38379</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\key.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\dht11.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>160</SelStart><SelEnd>160</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-05d92120><key>iaridepm.enu1</key></Toolbar-05d92120></Sizes></Row0><Row1><Sizes><Toolbar-09be39c0><key>debuggergui.enu1</key></Toolbar-09be39c0></Sizes></Row1></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>374</Bottom><Right>198</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>187970</sizeHorzCX><sizeHorzCY>303951</sizeHorzCY><sizeVertCX>187970</sizeVertCX><sizeVertCY>571429</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>98</Bottom><Right>1066</Right><x>-2</x><y>-2</y><xscreen>1068</xscreen><yscreen>100</yscreen><sizeHorzCX>1003759</sizeHorzCX><sizeHorzCY>151976</sizeHorzCY><sizeVertCX>187970</sizeVertCX><sizeVertCY>303951</sizeVertCY></Rect></Wnd1></Sizes></Row0><Row1><Sizes><Wnd2><Rect><Top>96</Top><Left>-2</Left><Bottom>239</Bottom><Right>1066</Right><x>-2</x><y>96</y><xscreen>1068</xscreen><yscreen>143</yscreen><sizeHorzCX>1003759</sizeHorzCX><sizeHorzCY>217325</sizeHorzCY><sizeVertCX>187970</sizeVertCX><sizeVertCY>303951</sizeVertCY></Rect></Wnd2></Sizes></Row1></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-04c92120><key>iaridepm.enu1</key></Toolbar-04c92120></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>257</Bottom><Right>198</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>187970</sizeHorzCX><sizeHorzCY>313480</sizeHorzCY><sizeVertCX>187970</sizeVertCX><sizeVertCY>405956</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>195</Bottom><Right>1066</Right><x>-2</x><y>-2</y><xscreen>1068</xscreen><yscreen>197</yscreen><sizeHorzCX>1003759</sizeHorzCX><sizeHorzCY>308777</sizeHorzCY><sizeVertCX>187970</sizeVertCX><sizeVertCY>313480</sizeVertCY></Rect></Wnd1></Sizes></Row0><Row1><Sizes><Wnd2><Rect><Top>193</Top><Left>-2</Left><Bottom>336</Bottom><Right>1066</Right><x>-2</x><y>193</y><xscreen>1068</xscreen><yscreen>143</yscreen><sizeHorzCX>1003759</sizeHorzCX><sizeHorzCY>224138</sizeHorzCY><sizeVertCX>187970</sizeVertCX><sizeVertCY>313480</sizeVertCY></Rect></Wnd2></Sizes></Row1></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Workspace>
 
