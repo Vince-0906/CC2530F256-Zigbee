@@ -31,8 +31,8 @@
 /* ====================================================================== */
 
 /* Alarm thresholds (settable from PC) */
-static unsigned char alarm_temp_th = 30;   /* default 30 C */
-static unsigned char alarm_humi_th = 70;   /* default 70 % */
+static unsigned char alarm_temp_th = 28;   /* default 28 C */
+static unsigned char alarm_humi_th = 60;   /* default 60 % */
 
 /* Alarm state */
 static volatile unsigned char alarm_active = 0;
@@ -288,7 +288,15 @@ void main(void)
             unsigned char result;
             dht11_ready = 0;
 
+            /*
+             * DHT11 uses a timing-critical single-wire protocol.
+             * Interrupts MUST be disabled during the read to prevent
+             * Timer4 / UART ISR from corrupting the microsecond timing.
+             */
+            EA = 0;                 /* disable all interrupts */
             result = DHT11_Read(&cur_temp, &cur_humi);
+            EA = 1;                 /* re-enable interrupts */
+
             if (result == 0)
             {
                 /* Check alarm condition: temp OR humi exceeds threshold */
@@ -314,7 +322,13 @@ void main(void)
                 /* Send sensor data via UART */
                 UART_SendSensorData();
             }
-            /* If DHT11 read failed, keep previous values, skip report */
+            else
+            {
+                /* DHT11 read failed - send error for debugging */
+                UART_SendString("DHT11 ERR:");
+                UART_SendNumber(result);
+                UART_SendString("\r\n");
+            }
         }
 
         /* ----- Parse incoming UART commands ----- */

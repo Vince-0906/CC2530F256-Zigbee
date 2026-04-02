@@ -4,15 +4,18 @@
 /*
  * Software PWM for LED2 (P0.1).
  * LED2 is active-low: writing 0 turns it ON, 1 turns it OFF.
- * PWM period = 256 calls to PWM_Process1ms() = 256 ms (~3.9 Hz).
- * duty = 0  -> LED2 always off
- * duty = 255 -> LED2 always on (brightest)
+ *
+ * PWM period = 20 calls to PWM_Process1ms() = 20 ms (50 Hz).
+ * duty range: 0-20.
+ *   duty = 0   -> LED2 always off
+ *   duty = 20  -> LED2 always on (brightest)
  */
 
-#define LED2  P0_1
+#define LED2           P0_1
+#define SW_PWM_PERIOD  20
 
 static unsigned char pwm_counter = 0;
-static unsigned char pwm_duty = 0;
+static unsigned char pwm_duty = 0;       /* 0 - SW_PWM_PERIOD */
 
 void PWM_Init(void)
 {
@@ -25,13 +28,17 @@ void PWM_Init(void)
 
 void PWM_SetDuty(unsigned char duty)
 {
-    pwm_duty = duty;
+    /* Map 0-255 input to 0-SW_PWM_PERIOD range */
+    pwm_duty = (unsigned char)((unsigned short)duty * SW_PWM_PERIOD / 255);
 }
 
 void PWM_Process1ms(void)
 {
     pwm_counter++;
-    /* pwm_counter wraps 0-255 automatically (unsigned char) */
+    if (pwm_counter >= SW_PWM_PERIOD)
+    {
+        pwm_counter = 0;
+    }
 
     if (pwm_duty == 0)
     {

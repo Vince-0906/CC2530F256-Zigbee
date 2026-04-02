@@ -9,11 +9,16 @@ static volatile unsigned char rx_tail = 0;
 
 void UART_Init(void)
 {
-    /* USART0 Alt 1: P0.2 = TX, P0.3 = RX */
+    /*
+     * USART0 Alt 1 pin mapping (from CC2530 datasheet):
+     *   P0.2 = RX0
+     *   P0.3 = TX0
+     */
     PERCFG &= ~0x01;       /* USART0 Alt 1 */
     P0SEL |= 0x0C;         /* P0.2, P0.3 peripheral function */
-    P0DIR |= 0x04;         /* P0.2 (TX) output */
-    P0DIR &= ~0x08;        /* P0.3 (RX) input */
+
+    /* Ensure USART0 has priority on Port 0 */
+    P2DIR = (P2DIR & 0x3F) | 0x00;   /* PRIPO=00: USART0 first priority */
 
     /* UART mode, receiver enable */
     U0CSR = 0xC0;           /* bit7=UART mode, bit6=RX enable */
@@ -25,8 +30,11 @@ void UART_Init(void)
     U0BAUD = 216;
     U0GCR = 11;
 
-    /* 8-N-1: 8 data bits, no parity, 1 stop bit (default) */
-    U0UCR = 0x02;           /* flush, 8-N-1 */
+    /* 8-N-1: 8 data bits, no parity, 1 stop bit */
+    U0UCR = 0x02;           /* high stop bit, low start bit */
+
+    /* Clear TX interrupt flag */
+    UTX0IF = 0;
 
     /* Enable USART0 RX interrupt */
     URX0IF = 0;
@@ -38,11 +46,11 @@ void UART_Init(void)
 
 void UART_SendByte(unsigned char byte)
 {
-    U0DBUF = byte;
-    while (!(U0CSR & 0x02))   /* wait for TX_BYTE flag */
+    U0DBUF = byte;              /* load data, starts transmission */
+    while (UTX0IF == 0)         /* wait for TX complete */
     {
     }
-    U0CSR &= ~0x02;           /* clear TX_BYTE flag */
+    UTX0IF = 0;                 /* clear TX complete flag */
 }
 
 void UART_SendString(const char *str)
@@ -82,7 +90,7 @@ unsigned char UART_GetRxByte(unsigned char *byte)
 }
 
 /* USART0 RX interrupt */
-#pragma vector = 0x13
+#pragma vector = URX0_VECTOR
 __interrupt void UART0_RX_ISR(void)
 {
     unsigned char next_head;
